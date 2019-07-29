@@ -3,7 +3,8 @@
 
 Manifest exemple:
 
-`applications:
+```yaml
+applications:
 - name: signalfx-auto-instrument
   path: target/greeting-service-auto-instrument-0.0.1-SNAPSHOT.jar
   buildpacks:
@@ -14,4 +15,5 @@ Manifest exemple:
     SFX_AGENT_LOC: https://repo1.maven.org/maven2/com/signalfx/public/signalfx-java-agent/0.28.0-sfx0/signalfx-java-agent-0.28.0-sfx0-unbundled.jar
     JAVA_OPTS: "-javaagent:../deps/0/signalfx-java-agent.jar"
     SIGNALFX_ENDPOINT_URL: https://ingest.eu0.signalfx.com/v1/trace
-    SIGNALFX_SERVICE_NAME: jlr-java-pcf`
+    SIGNALFX_SERVICE_NAME: jlr-java-pcf
+```
